@@ -1,0 +1,10 @@
+.width100 {
+    width: 100%;
+    text-align: center;
+}
+
+#display {
+    color: white;
+    background-color: black;
+    text-align: right;
+}
