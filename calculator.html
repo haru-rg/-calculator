@@ -13,29 +13,29 @@
     <form>
         <table>
             <tr>
-                <td colspan="4"><input id="display" type="text" value="" /></td>
+                <td colspan="4"><input id="display" type="text" value="0" /></td>
             </tr>
             <tr>
-                <td><input id="button7" class="width100" type="button" value="7" onclick="edit(this)" /></td>
-                <td><input id="button8" class="width100" type="button" value="8" onclick="edit(this)" /></td>
-                <td><input id="button9" class="width100" type="button" value="9" onclick="edit(this)" /></td>
-                <td><input id="buttonPlus" class="width100" type="button" value="+" onclick="edit(this)" /></td>
+                <td><input id="button7" class="width100" type="button" value="7" onclick="push('7')" /></td>
+                <td><input id="button8" class="width100" type="button" value="8" onclick="push('8')" /></td>
+                <td><input id="button9" class="width100" type="button" value="9" onclick="push('9')" /></td>
+                <td><input id="buttonPlus" class="width100" type="button" value="+" onclick="opePush('+')" /></td>
             </tr>
-            <td><input id="button4" class="width100" type="button" value="4" onclick="edit(this)" /></td>
-            <td><input id="button5" class="width100" type="button" value="5" onclick="edit(this)" /></td>
-            <td><input id="button6" class="width100" type="button" value="6" onclick="edit(this)" /></td>
-            <td><input id="buttonMinus" class="width100" type="button" value="-" onclick="edit(this)" /></td>
+            <td><input id="button4" class="width100" type="button" value="4" onclick="push('4')" /></td>
+            <td><input id="button5" class="width100" type="button" value="5" onclick="push('5')" /></td>
+            <td><input id="button6" class="width100" type="button" value="6" onclick="push('6')" /></td>
+            <td><input id="buttonMinus" class="width100" type="button" value="-" onclick="opePush('-')" /></td>
             <tr>
-                <td><input id="button1" class="width100" type="button" value="1" onclick="edit(this)" /></td>
-                <td><input id="button2" class="width100" type="button" value="2" onclick="edit(this)" /></td>
-                <td><input id="button3" class="width100" type="button" value="3" onclick="edit(this)" /></td>
-                <td><input id="buttonSurplus" class="width100" type="button" value="*" onclick="edit(this)" /></td>
+                <td><input id="button1" class="width100" type="button" value="1" onclick="push('1')" /></td>
+                <td><input id="button2" class="width100" type="button" value="2" onclick="push('2')" /></td>
+                <td><input id="button3" class="width100" type="button" value="3" onclick="push('3')" /></td>
+                <td><input id="buttonSurplus" class="width100" type="button" value="*" onclick="opePush('*')" /></td>
             </tr>
             <tr>
-                <td><input id="button0" class="width100" type="button" value="0" onclick="edit(this)" /></td>
-                <td><input id="button00" class="width100" type="button" value="00" onclick="edit(this)" /></td>
-                <td><input id="buttonDot" class="width100" type="button" value="." onclick="edit(this)" /></td>
-                <td><input id="buttonDivide" class="width100" type="button" value="/" onclick="edit(this)" /></td>
+                <td><input id="button0" class="width100" type="button" value="0" onclick="push('0')" /></td>
+                <td><input id="button00" class="width100" type="button" value="00" onclick="push00('00')" /></td>
+                <td><input id="buttonDot" class="width100" type="button" value="." onclick="dotPush()" /></td>
+                <td><input id="buttonDivide" class="width100" type="button" value="/" onclick="opePush('/')" /></td>
             </tr>
             <tr>
                 <td colspan="2"><input id="buttonAC" class="width100" type="button" value="AC" onclick="clearAC()" /></td>
